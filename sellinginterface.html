@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selling Interface</title>
+    <style>
+        *{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        } 
+        h2{
+            font-size: 32px;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+        .body-container{
+            font-family: Arial, sans-serif;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            margin-bottom: 25px;
+        }
+        .form-container1 {
+            width: 300px;
+            height: 515px;
+            /* padding-right:  20px; */
+            padding: 20px;
+            border: 5px solid rgb(177, 166, 174);
+            border-radius: 5px;
+            margin-bottom: 25px;
+        }
+        .form-container{
+            height: 500px;
+            width: 300px;
+            padding: 20px;
+            border: 5px solid rgb(177, 166, 174);
+            border-radius: 5px;
+            margin-bottom: 25px;
+        }
+        .form-container2{
+            height: 500px;
+            width: 300px;
+            padding: 20px;
+            border: 5px solid rgb(177, 166, 174);
+            border-radius: 5px;
+            margin-bottom:45px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            background-color: rgb(94, 186, 97);
+            color: white;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="body-container">
+<div class="form-container1">
+    <h2>List an Item for Sale</h2>
+    <form id="sellForm">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" name="itemName" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="price">Buying Date</label>*
+        <input type="date" id="cprice" name="cprice" required>
+        <label for="price">cost Price:</label>
+        <input type="number" id="cprice" name="cprice" required>
+
+        <label for="price">selling Price:</label>
+        <input type="number" id="sprice" name="sprice" required>
+
+        
+    </form>
+</div>
+
+
+<div class="form-container">
+    <h2>Upload Photos</h2>
+    <form id="sellForm">
+        
+        <label for="photo1">Photo:</label>
+        <input type="file" id="photo" required>
+
+        <label for="photo2">Photo:</label>
+        <input type="file" id="photo" required>
+
+        <label for="photo3">Photo:</label>
+        <input type="file" id="photo" required>
+        
+        <label for="photo4">Photo:</label>
+        <input type="file" id="photo">
+
+    </form>
+</div>
+
+<div class="form-container2">
+    <h2>Personal Information</h2>
+    <form id="sellForm">
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" required>
+
+        <label for="phoneno">Phone number</label>
+        <input type="number" id="phoneno" name="phoneno" required>
+        <label for="phoneno2">Other Phone number</label>
+        <input type="number" id="phoneno2" name="phoneno2">
+
+        <label for="description">email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+ </form>
+</div>
+<input type="submit" value="Post">
+</div>
+
+</body>
+</html>
